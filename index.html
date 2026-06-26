@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Year of Brotherhood | Happy Birthday Aaryan</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:linear-gradient(135deg,#e0f2fe,#dbeafe);overflow-x:hidden;color:#333}
+section{min-height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:40px 20px;text-align:center}
+h1,h2{font-family:'Playfair Display',serif}
+.glass{background:rgba(255,255,255,.35);backdrop-filter:blur(12px);border-radius:25px;padding:30px;box-shadow:0 8px 30px rgba(0,0,0,.08);max-width:900px}
+#countdown{position:fixed;inset:0;background:linear-gradient(135deg,#60a5fa,#2563eb);display:flex;justify-content:center;align-items:center;font-size:120px;color:#fff;z-index:9999}
+.hero{background:linear-gradient(135deg,#bfdbfe,#dbeafe)}
+.timeline{display:flex;flex-direction:column;gap:30px;max-width:900px;width:100%}
+.memory{background:#fff;padding:20px;border-radius:20px;box-shadow:0 5px 20px rgba(0,0,0,.05)}
+.memory img{width:100%;border-radius:15px;margin-top:10px}
+.bar{background:#eee;border-radius:50px;overflow:hidden;margin:20px auto;max-width:700px}
+.fill{height:30px;background:linear-gradient(90deg,#2563eb,#60a5fa);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold}
+button{padding:15px 30px;border:none;border-radius:50px;background:#2563eb;color:#fff;cursor:pointer}
+.hiddenMessage,#cakeMessage{display:none;margin-top:20px}
+.cake{font-size:120px;cursor:pointer}
+.confetti{position:fixed;top:-10px;width:10px;height:10px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+.sparkle{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;opacity:.6;animation:float 10s linear infinite}
+@keyframes float{from{transform:translateY(100vh)}to{transform:translateY(-100px)}}
+footer{padding:40px;text-align:center}
+</style></head><body>
+<div id="countdown">3</div>
+<audio id="bgMusic" loop preload="auto"><source src="Aaryan Birthday.mp3" type="audio/mpeg"></audio>
+<script>
+for(let i=0;i<50;i++){let s=document.createElement("div");s.className="sparkle";s.style.left=Math.random()*100+"%";s.style.animationDuration=(5+Math.random()*10)+"s";document.body.appendChild(s);}
+</script>
+<section class="hero"><div class="glass"><h1>🎉 Happy Birthday Aaryan 🎂</h1><p>To my brother from another mother.</p><br><h2>A Journey of Brotherhood 💙</h2><p>Made with ❤️ by Rachit Jain</p></div></section>
+<section><div class="glass" style="text-align:left"><h2>💌 A Letter From My Heart</h2><br><p>Happy Birthday, Aaryan! You're more than a friend—you are my brother. Thank you for every memory, every laugh and every moment. May this year bring you happiness, success, peace, good health and endless smiles. No matter where life takes us, you'll always be my brother.<br><br>With love,<br>Rachit Jain ❤️</p></div></section>
+<section><h2>📸 Our Brotherhood Journey</h2><div class="timeline">
+<div class="memory"><h3>2025</h3><p>Every memory is priceless.</p><img src="aryan 2025.JPEG"></div>
+<div class="memory"><h3>2025</h3><p>Brotherhood forever.</p><img src="aryan 2025(1).JPEG"></div>
+<div class="memory"><h3>2025</h3><p>Many more adventures ahead.</p><img src="aryan 2025(2).JPEG"></div>
+</div></section>
+<section><h2>🤝 Brotherhood Meter</h2>
+<div class="bar"><div class="fill" style="width:100%">Brotherhood 100%</div></div>
+<div class="bar"><div class="fill" style="width:100%">Trust Unlimited ♾️</div></div>
+<div class="bar"><div class="fill" style="width:100%">Smile Power 1000%</div></div>
+<div class="bar"><div class="fill" style="width:100%">Partner in Crime Forever ❤️</div></div>
+</section>
+<section><h2>👀 Secret Message</h2><button onclick="document.getElementById('secret').style.display='block'">Click if you're curious 👀</button><div class="hiddenMessage" id="secret">You'll always be my brother from another mother. Happy Birthday, Aaryan! 💙</div></section>
+<section><h2>🎂 Birthday Cake</h2><div class="cake" onclick="celebrate()">🎂</div><div id="cakeMessage" class="glass"><h3>Dear Aaryan 💙</h3><p>Happy Birthday! Wishing you a lifetime of happiness and success.</p></div></section>
+<footer>💙 Happy Birthday Once Again, Aaryan! 🎉<br>Brothers by Heart • Friends for Life ❤️</footer>
+<script>
+let c=3,d=document.getElementById('countdown');let t=setInterval(()=>{c--;if(c>0)d.innerHTML=c;else{d.innerHTML='🎂';setTimeout(()=>d.style.display='none',1000);clearInterval(t);}},1000);
+function celebrate(){document.getElementById('cakeMessage').style.display='block';let m=document.getElementById('bgMusic');m.play().catch(()=>{});for(let i=0;i<150;i++){let conf=document.createElement('div');conf.className='confetti';conf.style.left=Math.random()*100+'vw';conf.style.background=['#2563eb','#60a5fa','#fff','#93c5fd'][Math.floor(Math.random()*4)];conf.style.animationDuration=(3+Math.random()*4)+'s';document.body.appendChild(conf);}}
+</script>
+</body></html>
